@@ -1,9 +1,9 @@
 # Tesi
-## Addestramento_modello
+### Addestramento_modello
 É usato per creare un nuovo modello addestrandolo con immagini caricate tramite funzioni, quindi non è utile per immagini presenti in cartelle su drive(per ora utilizza solo tensorflow e keras) (è da eliminare).
-## Attacco_base
+### Attacco_base
 Importa un modello da drive e lo attacca usando ART permettendo di stampare un subplot del risultato, fare testing e di attaccare singole immagini prelevate da drive.
-## Addestramento modello pytorch
+### Addestramento modello pytorch
 Notebook che addestra un modello pytorch e lo attacca con FGM (è da eliminare)
 ## Richieste prof
 Cartella con notebook richiesti dal prof, finora è stato realizzata solo una variante di FGM che calcola perturbazioni in scala di grigi
