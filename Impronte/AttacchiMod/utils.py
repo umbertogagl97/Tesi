@@ -38,13 +38,6 @@ trans_norm=transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 
 #functions
 
-def calc_size(n):
-  '''
-  n: int 
-  return: 80% of n
-  '''
-  return tuple(int(np.ceil(i * (80/100))) for i in n)
-
 def compute_mask(img):
   #img iniziale [0,1]
   img=np.array(img[0])
@@ -88,6 +81,13 @@ def test_average(classifier,input):
   test_loader: dataloader 
   return: pred: classe predetta, probabilities, values
   '''
+  def calc_size(n):
+    '''
+    n: int 
+    return: 80% of n
+    '''
+    return tuple(int(np.ceil(i * (80/100))) for i in n)
+
   preds=[]
   #value=[]
   prob=nn.Softmax()
