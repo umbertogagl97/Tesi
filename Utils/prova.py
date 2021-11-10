@@ -1,3 +1,3 @@
-from Tesi.Utils.utils import test_average
+from utils import test_average
 
 test_average()
