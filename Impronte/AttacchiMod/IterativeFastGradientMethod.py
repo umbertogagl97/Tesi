@@ -16,6 +16,7 @@ from art.utils import (
     projection,
     check_and_transform_label_format,
 )
+import utils
 
 if TYPE_CHECKING:
     from art.utils import CLASSIFIER_LOSS_GRADIENTS_TYPE
